@@ -53,4 +53,4 @@
 
 > ### 著作:
 > - [Enhancing Underwater Images: Automatic Colorization using Deep Learning and Image Enhancement Techniques, Y. Lin, C. -W. Hung, Y. -J. Wang, C. -C. Liao and Y. -S. Tsai](https://ieeexplore.ieee.org/document/10347502)
->     - [GitHub](https://github.com/NTOU-Arrays-Start-at-One/Give-ocean-a-piece-of-your-mind)
+>     - ::github{repo="NTOU-Arrays-Start-at-One/Give-ocean-a-piece-of-your-mind"}

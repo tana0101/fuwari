@@ -145,26 +145,49 @@ const siteLang = siteConfig.lang.replace('_', '-')
 		I want to make the height transition parallel with the content transition instead of blocking it
 	*/
 
-	/*
 	.enable-banner.is-home #banner-wrapper {
 		@apply h-[var(--banner-height)] md:h-[var(--banner-height-home)]
 	}
-	*/
+	
 	.enable-banner #banner-wrapper {
 		@apply h-[var(--banner-height)]
 	}
 
-	/*
+	
 	.enable-banner.is-home #top-row {
-		@apply h-[calc(var(--banner-height)_-_30.5rem)] md:h-[calc(var(--banner-height-home)_-_30.5rem)]
+		@apply h-[calc(var(--banner-height)_-_32rem)] md:h-[calc(var(--banner-height-home)_-_32rem)]
 	}
-	*/
+	
+
 	.enable-banner #top-row {
-		@apply h-[calc(var(--banner-height)_-_30.5rem)]
+		@apply h-[calc(var(--banner-height)_-_45rem)]
 	}
 }
 </style>
 <script>
+
+// Text to display with typewriter effect
+const text = "Welcome to tana's blog!";
+let index = 0;
+
+function typeWriter() {
+    if (index < text.length) {
+        document.getElementById("typewriter").textContent += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 100);
+    } else {
+        setTimeout(resetTypewriter, 1500); // Wait for 1 second before resetting
+    }
+}
+
+function resetTypewriter() {
+    index = 0;
+    document.getElementById("typewriter").textContent = "";
+    setTimeout(typeWriter, 100);
+}
+
+typeWriter();
+
 import 'overlayscrollbars/overlayscrollbars.css';
 import {
 	OverlayScrollbars,

@@ -49,7 +49,7 @@ rainbow-dark = linear-gradient(to right, oklch(0.70 0.10 0), oklch(0.70 0.10 30)
 :root
   --radius-large 1rem
 
-  --banner-height-home 60vh
+  --banner-height-home 100vh
   --banner-height 100vh
 
   --content-delay 150ms
@@ -169,6 +169,16 @@ color_set({
     --os-handle-bg-hover: var(--scrollbar-bg-hover-light);
     --os-handle-bg-active: var(--scrollbar-bg-active-light);
 
+.typewriter {
+    font-family: Comic Sans MS;
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    left: 50%; 
+    top: 25vh;
+    transform: translateX(-50%);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.2), 0 0 30px rgba(255, 255, 255, 0.2), 0 0 40px rgba(255, 255, 255, 0.2); /* 添加發白光效果 */
+}
 
 </style>
 <style is:global>
